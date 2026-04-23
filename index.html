@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Sis!!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #fce4ec 0%, #f8bbd0 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #880e4f;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .emoji {
+            font-size: 50px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            margin: 10px 0;
+            font-size: 28px;
+            color: #d81b60;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .wishes {
+            font-style: italic;
+            margin-top: 20px;
+            color: #ad1457;
+            border-top: 1px dashed #f8bbd0;
+            padding-top: 20px;
+        }
+
+        .button {
+            margin-top: 30px;
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #d81b60;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #ad1457;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Dekorasi balon kecil */
+        .balloon {
+            position: absolute;
+            font-size: 30px;
+            animation: float 4s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="balloon" style="top: 10%; left: 10%;">🎈</div>
+    <div class="balloon" style="top: 20%; right: 15%; animation-delay: 1s;">🎂</div>
+    <div class="balloon" style="bottom: 15%; left: 20%; animation-delay: 2s;">✨</div>
+
+    <div class="card">
+        <span class="emoji">🌸</span>
+        <h1>Happy Birthday,<br>My Sister! Nafilatuz Zahra</h1>
+        
+        <p>Happy silver birthday, Mbak la! Selamat menempuh usia 25 tahun. Jangan terlalu dipikirin angka 25-nya, yang penting perjalananmu selama ini luar biasa. Looking back at all the years we’ve spent together, aku sadar betapa beruntungnya aku punya kakak sepertimu. Dari zaman kita main bareng sampai sekarang kita sudah punya urusan masing-masing, you’ve always been my constant.
+
+Thank you for being my guide, my protector, and my second mom sometimes. Maaf ya kalau selama ini aku belum bisa jadi adik cowok yang sempurna atau sering bikin repot. But today, I want to celebrate you—the amazing person you’ve become. Semoga dunia selalu baik sama kamu, dan semoga kamu nggak pernah kehilangan semangatmu yang luar biasa itu. Stay beautiful inside and out. Enjoy your day, you deserve all the happiness in the world!"</p>
+        
+        <div class="wishes">
+            "Semoga bertambahnya usia ini penuh dengan kebahagiaan, kesehatan, 
+            dan semua impianmu segera menjadi kenyataan. SUGIH SEKABEHANE"
+        </div>
+
+        <a href="#" class="button" onclick="alert('Jangan lupa istirahat di sela-sela kesibukanmu. Proud of you always! ❤️')">Klik di Sini!</a>
+    </div>
+
+</body>
+</html>
